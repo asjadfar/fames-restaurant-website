@@ -72,6 +72,7 @@
   .menu-cat { margin-bottom: 34px; }
   .menu-cat h3 { font-size: 1.35rem; margin-bottom: 4px; color: var(--red); }
   .menu-cat .cat-note { color: var(--muted); font-size: .95rem; margin-bottom: 14px; }
+  .cat-photo { width: 100%; height: 190px; object-fit: cover; border-radius: 12px; margin-bottom: 14px; }
   .items { display: grid; grid-template-columns: 1fr 1fr; gap: 10px 28px; }
   .item { display: flex; justify-content: space-between; gap: 16px; padding: 10px 0; border-bottom: 1px dashed #EADFCF; }
   .item b { font-weight: 700; }
@@ -199,7 +200,7 @@
 <section class="menu" id="menu">
   <div class="wrap">
     <h2>Our Menu</h2>
-    <p class="sub">Full menu with prices in Pakistani Rupees (Rs.). Tap a category or search for your favourite. Prices from the Fames menu — pizza ranges from the New Menu 2026.</p>
+    <p class="sub">Full menu with prices in Pakistani Rupees (Rs.). Tap a category or search for your favourite. Photos: Fames' own real photos where available — food photos for the dishes that have no real photo yet. Prices from the Fames menu — pizza ranges from the New Menu 2026.</p>
     <input class="search" id="menuSearch" type="text" placeholder="Search menu — try pizza, zinger, broast, shawarma…" oninput="filterMenu()">
     <div class="tabs" id="tabs">
       <button class="tab active" onclick="showCat('all', this)">All</button>
@@ -213,6 +214,7 @@
     </div>
 
     <div class="menu-cat" data-cat="starters">
+      <img class="cat-photo" src="https://images.unsplash.com/photo-1562967914-608f82629710?w=900&q=80" alt="Crispy chicken starters">
       <h3>Starters</h3>
       <div class="items">
         <div class="item"><div><b>Fames Cheese Sticks</b><small>5 pcs</small></div><span class="price">Rs. 400</span></div>
@@ -226,6 +228,7 @@
     </div>
 
     <div class="menu-cat" data-cat="fries">
+      <img class="cat-photo" src="https://images.unsplash.com/photo-1573080496219-bb080dd4f877?w=900&q=80" alt="French fries and sandwiches">
       <h3>Fries &amp; Sandwiches</h3>
       <div class="items">
         <div class="item"><div><b>Plain Fries</b></div><span class="price">Rs. 180</span></div>
@@ -248,6 +251,7 @@
     </div>
 
     <div class="menu-cat" data-cat="burgers">
+      <img class="cat-photo" src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=900&q=80" alt="Zinger burger">
       <h3>Burgers</h3>
       <div class="items">
         <div class="item"><div><b>Patty Burger</b></div><span class="price">Rs. 230</span></div>
@@ -264,6 +268,7 @@
     </div>
 
     <div class="menu-cat" data-cat="rolls">
+      <img class="cat-photo" src="images/shawarma.jpg" alt="Fames chicken shawarma wrap">
       <h3>Rolls &amp; Wraps</h3>
       <div class="items">
         <div class="item"><div><b>Fames Chicken Roll</b></div><span class="price">Rs. 250</span></div>
@@ -285,6 +290,7 @@
     </div>
 
     <div class="menu-cat" data-cat="broast">
+      <img class="cat-photo" src="images/broast.jpg" alt="Fames broast with fries">
       <h3>Al Ikram Fames Special Injected Broast</h3>
       <p class="cat-note">Crispy outside, juicy inside — served with fries, buns and chilli garlic sauce.</p>
       <div class="items">
@@ -297,6 +303,7 @@
     </div>
 
     <div class="menu-cat" data-cat="pizza">
+      <img class="cat-photo" src="images/crown-pizza.jpg" alt="Fames crown crust pizza">
       <h3>Traditional Pizza</h3>
       <p class="cat-note">Rs. 600 – 2,000 by size (New Menu 2026). Flavours:</p>
       <div class="items">
@@ -331,6 +338,7 @@
     </div>
 
     <div class="menu-cat" data-cat="others">
+      <img class="cat-photo" src="https://images.unsplash.com/photo-1571091718767-18b5b1457add?w=900&q=80" alt="Burger and fries meal">
       <h3>Others</h3>
       <div class="items">
         <div class="item"><div><b>Signature Zinger</b></div><span class="price">Rs. 500</span></div>
